@@ -687,6 +687,17 @@ if !exists("cpp_no_cpp11")
     syntax keyword cppSTLtype minutes
     syntax keyword cppSTLtype hours
 
+	"integers
+	syntax keyword cppSTLType	int8
+	syntax keyword cppSTLType	int16
+	syntax keyword cppSTLType	int32
+	syntax keyword cppSTLType	int64
+	syntax keyword cppSTLType	uint
+	syntax keyword cppSTLType	uint8
+	syntax keyword cppSTLType	uint16
+	syntax keyword cppSTLType	uint32
+	syntax keyword cppSTLType	uint64
+
     "raw string literals
     syntax region cppRawString matchgroup=cppRawDelimiter start=@\%(u8\|[uLU]\)\=R"\z([[:alnum:]_{}[\]#<>%:;.?*\+\-/\^&|~!=,"']\{,16}\)(@ end=/)\z1"/ contains=@Spell
 
